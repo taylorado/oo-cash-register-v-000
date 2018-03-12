@@ -22,6 +22,8 @@ class CashRegister
     if discount != nil
       self.total -= (self.total*((@discount/100).to_f))
       return "After the discount, the total comes to $#{self.total}."
+    else
+      return "There is no discount to apply."
     end
   # the cash register was initialized with an employee discount:
     # applies the discount to the total price
