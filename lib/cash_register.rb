@@ -12,6 +12,7 @@ class CashRegister
 
   def add_item(name, cost, number = 1)
     self.total += (cost*number)
+    @last_transaction = cost
     @@items << name
   end
 
@@ -34,6 +35,7 @@ class CashRegister
   end
 
   def void_last_transaction
+    self.total -= @last_transaction
   # subtracts the last transaction from the total
   end
 
