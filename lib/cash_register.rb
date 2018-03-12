@@ -6,7 +6,7 @@ class CashRegister
 
   def initialize(discount = 0)
 
-    @discount = discount
+    @discount = discount/100
     @total = 0
   end
 
@@ -22,7 +22,7 @@ class CashRegister
     if discount = nil
       discount
     else
-      self.total -= (self.total*number_to_percentage(@discount))
+      self.total = self.total - (self.total*@discount)
     end
   # the cash register was initialized with an employee discount:
     # applies the discount to the total price
