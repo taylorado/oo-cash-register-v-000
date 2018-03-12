@@ -26,6 +26,7 @@ class CashRegister
   end
 
   def items
+    self.items
   # (self).items!?
   # returns an array containing all items that have been added
   end
