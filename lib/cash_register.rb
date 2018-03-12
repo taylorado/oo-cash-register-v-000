@@ -20,7 +20,7 @@ class CashRegister
 
   def apply_discount
     if discount != 0
-      #fractional_discount = 
+      #fractional_discount =
       @total *= (@discount/100.00)
       return "After the discount, the total comes to $#{self.total}."
     else
