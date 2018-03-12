@@ -13,7 +13,7 @@ class CashRegister
   def add_item(name, cost, number = 1)
     self.total += (cost*number)
     @last_transaction = cost
-    self.items << name
+    @items << name
   end
 
 
