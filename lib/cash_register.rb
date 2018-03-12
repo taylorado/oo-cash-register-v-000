@@ -22,7 +22,7 @@ class CashRegister
     if discount = nil
       discount
     else
-      self.total = self.total - (self.total*@discount)
+      self.total = self.total - (self.total*(@discount/100))
     end
   # the cash register was initialized with an employee discount:
     # applies the discount to the total price
