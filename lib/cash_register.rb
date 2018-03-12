@@ -9,13 +9,10 @@ class CashRegister
   end
 
   def add_item(cost, name, number = 1)
-    self.total = cost * number
-    @items << name
+    @total += (cost*number)
   end
 
-  def add_item_2(cost, name, number = 1)
-    self.total = cost * number
-  end
+
 
   def apply_discount
   # the cash register was initialized with an employee discount:
