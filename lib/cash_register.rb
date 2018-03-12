@@ -1,6 +1,6 @@
 
 class CashRegister
-  attr_accessor :discount, :items, :last_transaction, :total
+  attr_accessor :discount, :last_transaction, :total
 
 
 
